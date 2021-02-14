@@ -28,8 +28,13 @@
           <tr>
             <th scope="col">CustomerName</th>
             <th scope="col">ContactLastName</th>
+            <th scope="col">ContactFirstName</th>
+            <th scope="col">Phone</th>
             <th scope="col">AddressLine1</th>
+            <th scope="col">AddressLine2</th>
             <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">CreditLimit</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -37,12 +42,18 @@
           <tr>
             <th scope="row">1</th>
             <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
+            <td>Bootstrap 4 CDN and Starter Template</td>
             <td>Cristina</td>
             <td>2.846</td>
             <td>
               <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-              <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="far fa-trash-alt"></i></button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
             </td>
           </tr>
           <tr>
