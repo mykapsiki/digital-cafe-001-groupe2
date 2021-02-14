@@ -47,7 +47,6 @@
             <td>Bootstrap 4 CDN and Starter Template</td>
             <td>Bootstrap 4 CDN and Starter Template</td>
             <td>Bootstrap 4 CDN and Starter Template</td>
-            <td>Bootstrap 4 CDN and Starter Template</td>
             <td>Cristina</td>
             <td>2.846</td>
             <td>
@@ -98,12 +97,40 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="champ1">Email address</label>
+            <label for="champ1">CustomerName</label>
             <input type="email" class="form-control" id="champ1"  placeholder="Enter CustomerName">
           </div>
           <div class="form-group">
-            <label for="champ2">Password</label>
+            <label for="champ2">ContactLastName</label>
             <input type="password" class="form-control" id="champ2" placeholder="enter ContactLastName">
+          </div>
+          <div class="form-group">
+            <label for="champ3">ContactFirstName</label>
+            <input type="password" class="form-control" id="champ3" placeholder="enter ContactFirstName">
+          </div>
+          <div class="form-group">
+            <label for="champ4">Phone</label>
+            <input type="password" class="form-control" id="champ4" placeholder="enter Phone">
+          </div>
+          <div class="form-group">
+            <label for="champ5">AddressLine1</label>
+            <input type="password" class="form-control" id="champ5" placeholder="enter AddressLine1">
+          </div>
+          <div class="form-group">
+            <label for="champ6">AddressLine2</label>
+            <input type="password" class="form-control" id="champ6" placeholder="enter AddressLine2">
+          </div>
+          <div class="form-group">
+            <label for="champ7">City</label>
+            <input type="password" class="form-control" id="champ7" placeholder="enter City">
+          </div>
+          <div class="form-group">
+            <label for="champ8">State</label>
+            <input type="password" class="form-control" id="champ8" placeholder="enter State">
+          </div>
+          <div class="form-group">
+            <label for="champ9">CreditLimit</label>
+            <input type="password" class="form-control" id="champ9" placeholder="enter CreditLimit">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
