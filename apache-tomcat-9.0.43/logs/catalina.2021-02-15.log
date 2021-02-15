@@ -1,0 +1,5 @@
+15-Feb-2021 12:51:49.561 INFOS [main] org.apache.catalina.core.StandardServer.await Une commande d'arrêt valide a été reçue sur le port d'arrêt, arrêt de l'instance du serveur
+15-Feb-2021 12:51:50.017 INFOS [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+15-Feb-2021 12:51:56.533 INFOS [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+15-Feb-2021 12:51:57.664 INFOS [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+15-Feb-2021 12:51:57.709 INFOS [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]

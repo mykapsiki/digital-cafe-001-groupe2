@@ -46,6 +46,13 @@
 			<version>${mockito-core.version}</version>
 			<scope>test</scope>
 		</dependency>
+    <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>ojdbc</artifactId>
+        <version>8</version>
+        <scope>system</scope>
+        <systemPath>C:/ojdbc8.jar</systemPath>
+    </dependency>
     </dependencies>
 
     <build>
