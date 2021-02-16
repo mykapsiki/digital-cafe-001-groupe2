@@ -1,0 +1,17 @@
+127.0.0.1 - - [16/Feb/2021:16:19:06 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - - [16/Feb/2021:16:19:07 +0100] "GET /manager/text/ HTTP/1.1" 401 2562
+127.0.0.1 - admin [16/Feb/2021:16:19:14 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+127.0.0.1 - - [16/Feb/2021:16:19:14 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:19:14 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+127.0.0.1 - - [16/Feb/2021:16:19:14 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:19:14 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+127.0.0.1 - - [16/Feb/2021:16:19:14 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:19:14 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:19:56 +0100] "GET /liste HTTP/1.1" 404 686
+0:0:0:0:0:0:0:1 - - [16/Feb/2021:16:19:56 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [16/Feb/2021:16:20:13 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:20:13 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+127.0.0.1 - - [16/Feb/2021:16:20:13 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:20:13 +0100] "GET /manager/text/ HTTP/1.1" 200 42
+127.0.0.1 - - [16/Feb/2021:16:20:13 +0100] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - admin [16/Feb/2021:16:20:13 +0100] "GET /manager/text/ HTTP/1.1" 200 42
