@@ -6,6 +6,14 @@
 
 package DAO;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import model.Customer;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
 /**
  *
  * @author ChickDev03
@@ -29,16 +37,16 @@ public class CustomerDataContext {
 		                // exécuter la requete
 		       
 		        jdbcTemplate.update("insert into customers(customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2,city, state, postalCode, creditLimit ) values(?,?,?,?,?,?,?,?,?,?)",
-		                new Object[]{p.getCustomerName(), getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit()});
+		                new Object[]{p.getCustomerName(), p.getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit()});
 		       
 		    }
-		public Produit selectByID(int productID) {
-		        Produit produit=this.jdbcTemplate.queryForObject("select * from customers where customerNumber=?", new Object[]{customerNumber}, new CustomerMapper());
+		public Customer selectByID(int customerNumber) {
+		        Customer produit=this.jdbcTemplate.queryForObject("select * from customers where customerNumber=?", new Object[]{customerNumber}, new CustomerMapper());
 		                return produit;
 		    }
 		public void update(Customer p) {
 		        jdbcTemplate.update("update customers set customerName=?,  contactLastName=?, contactFirstName=?, phone=?, addressLine1=?, addressLine2=?, city=?, state=?, postalCode=?, creditLimit=? where customerNumber=?",
-		                new Object[]{p.getCustomerName(), getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit()});
+		                new Object[]{p.getCustomerName(), p.getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit()});
 		    }
 
 		public void delete(int customerNumber) {

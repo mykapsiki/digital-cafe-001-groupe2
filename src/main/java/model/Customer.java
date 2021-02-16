@@ -56,7 +56,7 @@ String addressLine1, String addressLine2, String city, String state, String post
     public String getCustomerName(){
         return this.CustomerName;
     }
-    public void  setCustomerName(String name){
+    public void  setCustomerName(String customerName){
         this.CustomerName = customerName;
     }
     public String getContactLastName(){
@@ -102,8 +102,8 @@ String addressLine1, String addressLine2, String city, String state, String post
         this.PostalCode = postalCode;
     }
 
-            public String getCreditLimit(){
-        return this.CreditLimit;
+            public double getCreditLimit(){
+        return this.CreditLimit ;
     }
     public void  setCreditLimit(double creditLimit){
         this.CreditLimit = creditLimit;

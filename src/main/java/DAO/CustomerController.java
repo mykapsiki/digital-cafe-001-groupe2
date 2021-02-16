@@ -1,6 +1,12 @@
 
 package DAO;
 
+import javax.servlet.http.HttpServletRequest;
+import model.Customer;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 @Controller
 public class CustomerController {
 
@@ -9,13 +15,13 @@ public class CustomerController {
     public ModelAndView liste(){  
         return new ModelAndView("liste","liste",dt.select());
     }
-    @RequestMapping(value = "Customer/add",method =RequestMethod.GET )
+    @RequestMapping(value = "Customer/add",method = RequestMethod.GET )
     public ModelAndView add(){
         return new ModelAndView("add");
     }
     @RequestMapping(value = "Customer/add",method =RequestMethod.POST )
     public String add(@ModelAttribute("formProduit") Customer p){
-    	 Customer c = new Customer(p.getCustomerName(), getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit());
+    	 Customer c = new Customer(p.getCustomerName(), p.getContactLastName(), p.getContactLastName(), p.getPhone(), p.getAddressLine1(),p.getAddressLine2(),p.getCity(), p.getState(), p.getPostalCode(),p.getCreditLimit());
         dt.insert(c);
         return  "redirect:/Product/liste";
     }
@@ -27,7 +33,7 @@ public class CustomerController {
 @RequestMapping(value="Customer/update/{num}", method=RequestMethod.GET)
     public ModelAndView update(@PathVariable("num") int customerNumber){
         // rechercher le produit qui correspond au numéro recu en paramètre
-		Customer p=dt.selectByID(customerNumber);
+		Customer p= dt.selectByID(customerNumber);
         // afficher le produit dans un formulaire pour la modification
         return new ModelAndView("update","produit", produit);
     }

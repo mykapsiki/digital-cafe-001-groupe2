@@ -12,13 +12,13 @@ package model;
  */
 public class User {
     private int Id;
-    private string Name;
-    private string Username;
-    private string Password;
+    private String Name;
+    private String Username;
+    private String Password;
     private int Type;
     private int Status;
 
-    public User(int id, string name, string username, string password, int type, int status){
+    public User(int id, String name, String username, String password, int type, int status){
        this.Id = id;
        this.Name = name;
        this.Username = username;
@@ -30,16 +30,13 @@ public class User {
     public int getId(){
         return this.Id;
     }
-    public string getName(){
+    public String getName(){
         return this.Name;
     }
-    public void  setName(string name){
+    public void  setName(String name){
         this.Name = name;
     }
-    public string getName(){
-        return this.Name;
-    }
-    public void  setPassword(string password){
+    public void  setPassword(String password){
         this.Password = password;
     }
 
