@@ -35,6 +35,10 @@ String addressLine1, String addressLine2, String city, String state, String post
        this.PostalCode = postalCode;
        this.CreditLimit = creditLimit;
     }
+    
+    public Customer(){
+        
+    }
 
     public Customer(int customerNumber, String customerName, String contactLastName, String contactFirstName, String phone, 
 String addressLine1, String addressLine2, String city, String state, String postalCode, double creditLimit ){
@@ -53,6 +57,9 @@ String addressLine1, String addressLine2, String city, String state, String post
     public int getCustomerNumber(){
         return this.CustomerNumber;
     }
+        public void setCustomerNumber(int number){
+         this.CustomerNumber = number;
+    }
     public String getCustomerName(){
         return this.CustomerName;
     }
@@ -65,6 +72,13 @@ String addressLine1, String addressLine2, String city, String state, String post
     public void  setContactLastName(String contactLastName){
         this.ContactLastName = contactLastName;
     }
+        public String getContactFirstName(){
+        return this.ContactFirstName;
+    }
+    public void  setContactFirstName(String contactLastName){
+        this.ContactFirstName = contactLastName;
+    }
+
 
         public String getPhone(){
         return this.Phone;
@@ -93,6 +107,9 @@ String addressLine1, String addressLine2, String city, String state, String post
     }
     public void  setState(String state){
         this.State = state;
+    }
+        public void  setCity(String state){
+        this.City = state;
     }
 
             public String getPostalCode(){

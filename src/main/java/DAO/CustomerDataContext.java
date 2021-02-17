@@ -8,9 +8,12 @@ package DAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import model.Customer;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
@@ -19,6 +22,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  * @author ChickDev03
  */
 public class CustomerDataContext {
+    private final JdbcTemplate jdbcTemplate;
     public CustomerDataContext(){
 		// La création du DriverManagerDataSource
 		        DriverManagerDataSource ds= new DriverManagerDataSource("jdbc:mysql://localhost:3306/classicmodels?useSSL=false");
@@ -26,12 +30,35 @@ public class CustomerDataContext {
 		        // La création jdbctemplate
 		        this.jdbcTemplate = new JdbcTemplate(ds);
 		    }
-		    public List<Customer> select(){
-		        
-		        List<Customer> liste=this.jdbcTemplate.query("select * from Products", new CustomerMapper() );
-		        return liste;
-
-		    }
+		    public List<Customer> getAllCustomers(){
+                        
+                         return this.jdbcTemplate.query("select * from employee",new ResultSetExtractor<List<Customer>>(){  
+                            @Override  
+                            public List<Customer> extractData(ResultSet rs) throws SQLException,  
+                            DataAccessException {  
+      
+                            List<Customer> list=new ArrayList<Customer>();  
+                            while(rs.next()){  
+                            Customer e=new Customer();  
+                            e.setCustomerNumber(rs.getInt(1));  
+                            e.setCustomerName(rs.getString(2));  
+                            e.setContactLastName(rs.getString(3));  
+                            e.setContactFirstName(rs.getString(4));  
+                            e.setPhone(rs.getString(5));  
+                            e.setAddressLine1(rs.getString(6));  
+                            e.setAddressLine2(rs.getString(7));  
+                            e.setCity(rs.getString(8));  
+                            e.setState(rs.getString(9));  
+                            e.setPostalCode(rs.getString(10));  
+                            e.setCreditLimit(rs.getDouble(11));  
+                            list.add(e);  
+                            }  
+                                return list;  
+                            }  
+    });  
+  }  
+		      
+		    
 
 		    public void insert(Customer p){
 		                // exécuter la requete

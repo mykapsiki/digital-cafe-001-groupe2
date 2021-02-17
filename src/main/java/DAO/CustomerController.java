@@ -39,7 +39,7 @@ public class CustomerController {
         // rechercher le produit qui correspond au numéro recu en paramètre
 		Customer p= dt.selectByID(customerNumber);
         // afficher le produit dans un formulaire pour la modification
-        return new ModelAndView("update","produit", produit);
+        return new ModelAndView("update","produit", customerNumber);
     }
     @RequestMapping(value = "Customer/update",method =RequestMethod.POST )
     public String update(@ModelAttribute("formProduit") Customer p){

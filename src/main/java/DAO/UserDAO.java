@@ -11,11 +11,11 @@ package DAO;
  * @author ChickDev03
  */
 public class UserDAO {
-    private string jdbcUrl = "jdbc:mysql://localhost:3306/classicmodels?useSSL=false";
-    private string jdbcUsername = "root";
-    private string jdbcPassword = "";
+    private String jdbcUrl = "jdbc:mysql://localhost:3306/classicmodels?useSSL=false";
+    private String jdbcUsername = "root";
+    private String jdbcPassword = "";
 
-    private static string SELECT_USER = "select * from user username=? AND password=?";
+    private static String SELECT_USER = "select * from user username=? AND password=?";
     
 
 }

@@ -1,0 +1,44 @@
+17-Feb-2021 12:55:58.857 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/9.0.43
+17-Feb-2021 12:55:58.859 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Jan 28 2021 20:25:45 UTC
+17-Feb-2021 12:55:58.859 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               9.0.43.0
+17-Feb-2021 12:55:58.859 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 10
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk1.8.0_271\jre
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      1.8.0_271-b09
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43
+17-Feb-2021 12:55:58.860 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\conf\logging.properties
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dhttp.nonProxyHosts=localhost|127.0.0.1|DESKTOP-V7FQR82
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43
+17-Feb-2021 12:55:58.862 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\temp
+17-Feb-2021 12:55:58.870 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.26] en utilisant APR version [1.7.0]
+17-Feb-2021 12:55:58.870 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true]
+17-Feb-2021 12:55:58.870 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Configuration de APR/OpenSSL : useAprConnector [false], useOpenSSL [true]
+17-Feb-2021 12:55:58.875 INFOS [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1i  8 Dec 2020]
+17-Feb-2021 12:55:59.318 INFOS [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2021 12:55:59.679 INFOS [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1194] millisecondes
+17-Feb-2021 12:55:59.744 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+17-Feb-2021 12:55:59.744 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/9.0.43]
+17-Feb-2021 12:55:59.756 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\client]
+17-Feb-2021 12:56:00.149 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\client] de l'application web s'est terminé en [392] ms
+17-Feb-2021 12:56:00.150 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\docs]
+17-Feb-2021 12:56:00.209 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\docs] de l'application web s'est terminé en [59] ms
+17-Feb-2021 12:56:00.209 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\examples]
+17-Feb-2021 12:56:01.267 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\examples] de l'application web s'est terminé en [1 058] ms
+17-Feb-2021 12:56:01.268 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\host-manager]
+17-Feb-2021 12:56:01.444 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\host-manager] de l'application web s'est terminé en [176] ms
+17-Feb-2021 12:56:01.444 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\manager]
+17-Feb-2021 12:56:01.613 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\manager] de l'application web s'est terminé en [169] ms
+17-Feb-2021 12:56:01.614 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\ROOT]
+17-Feb-2021 12:56:01.676 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\ROOT] de l'application web s'est terminé en [63] ms
+17-Feb-2021 12:56:01.676 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\views]
+17-Feb-2021 12:56:01.711 INFOS [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [C:\Users\STARTER\Documents\digital-cafe-001-groupe2\apache-tomcat-9.0.43\webapps\views] de l'application web s'est terminé en [35] ms
+17-Feb-2021 12:56:01.715 INFOS [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+17-Feb-2021 12:56:01.731 INFOS [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [2051] millisecondes
